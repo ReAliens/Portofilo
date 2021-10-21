@@ -2,7 +2,7 @@
 
 This is the a portofilo project  
 
-![screenshot]('./Screenshot from 2021-10-21 03-58-06.png')
+![screenshot]('./screenshot.png')
 
 ## Built With
 
@@ -29,7 +29,7 @@ no installations
 
 ## Authors
 
-👤 **Author1**
+👤 **Ahmed Reda**
 
 - GitHub: [@githubhandle](https://github.com/ReAliens)
 
@@ -42,9 +42,3 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
