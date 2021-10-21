@@ -1,3 +1,73 @@
-h1 {
-  color: aquamarine;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    max-width: 375px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    background-color: #191765;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    font-size: 18px;
+    line-height: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 375px;
+    background: #191765 url('./Ellipse\ 18@2x.png') -20px -50px no-repeat;
+    background-size: 160px;
+}
+
+.first-section {
+    height: 155px;
+    display: flex;
+    padding: 0 25px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first-section h1 {
+    color: #7D73FC;
+    font-weight: bold;
+    line-height: 70px;
+    font-size: 48px;
+    letter-spacing: 0.37px;
+}
+
+.first-section h2 {
+    color: #EDECFF;
+    line-height: 45px;
+    font-size: 32px;
+    letter-spacing: 0.37px;
+}
+
+.seconed-section {
+    display: flex;
+    width: 325px;
+    height: 170px;
+    text-align: center;
+    align-content: center;
+    color: #C8C8D4;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+hr {
+    width: 325px;
+    border-color: #E5E5E5;
 }
