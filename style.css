@@ -26,7 +26,7 @@ header nav {
   text-align: center;
   align-items: center;
   max-width: 375px;
-  background: #191765 url('./Ellipse\ 18@2x.png') -20px -50px no-repeat;
+  background: #191765 url('./images/Ellipse18.png') -20px -50px no-repeat;
   background-size: 160px;
 }
 
@@ -98,7 +98,6 @@ header nav {
   color: #f5f5ff;
   text-align: left;
   font-size: 14px;
-
   /* font-weight: 500; */
   line-height: 24px;
 }
@@ -161,11 +160,11 @@ header nav {
 
 .work {
   height: 90vh;
-  width: 325px;
+  /* width: 325px; */
   display: flex;
   flex-direction: column;
   margin-top: 25px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
 }
 
 .work h2 {
@@ -220,4 +219,21 @@ header nav {
 
 .w-section-tech .last-tech {
   border-right: transparent;
+}
+
+.ws-1 {
+  background: #191765 url('./images/Ellipse20.png') no-repeat;
+}
+
+.ws-2 {
+  background: url('./images/Ellipse21.png') center right no-repeat;
+  background-size: 200px;
+}
+
+.ws-3 {
+  background: #191765 url('./images/Ellipse22.png') center left no-repeat;
+}
+
+.ws-4 {
+  background: #191765 url('./images/Ellipse23.png') center right no-repeat;
 }
