@@ -7,7 +7,6 @@
 body {
   max-width: 375px;
   height: 100vh;
-  overflow: hidden;
 }
 
 header nav {
@@ -24,16 +23,15 @@ header nav {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   text-align: center;
   align-items: center;
   max-width: 375px;
-  background: #191765 url('./Ellipse\ 18@2x.png') -20px -50px no-repeat;
+  background: #191765 url('./images/Ellipse18.png') -20px -50px no-repeat;
   background-size: 160px;
 }
 
 .first-section {
-  height: 90%;
+  height: 95vh;
   display: flex;
   justify-content: space-around;
   padding: 0 25px;
@@ -42,7 +40,6 @@ header nav {
 }
 
 .title {
-  height: 155px;
   width: 325px;
   display: flex;
   justify-content: flex-end;
@@ -50,7 +47,6 @@ header nav {
 }
 
 .description {
-  height: 170px;
   width: 325px;
   flex-direction: column;
 }
@@ -78,9 +74,175 @@ header nav {
   color: #c8c8d4;
   line-height: 28px;
   font-size: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #646369;
 }
 
-hr {
+.seconed-section {
   width: 325px;
-  border-color: #e5e5e5;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #646369;
+}
+
+.seconed-section h3 {
+  color: #9490ff;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.seconed-section ul {
+  list-style-type: none;
+}
+
+.seconed-section li {
+  color: #f5f5ff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.lang-grid-item {
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  text-align: left;
+}
+
+.frame-skills-grid-item {
+  display: grid;
+  grid-template-rows: repeat(6, 40px);
+  text-align: left;
+}
+
+.third-section {
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 15% 15% 70%;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.work-nav img {
+  height: 18px;
+  width: 21px;
+}
+
+.work-nav p {
+  color: #a2a3ae;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.third-section h2 {
+  color: #9490ff;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  padding: 0 25px;
+}
+
+.recent {
+  align-items: flex-end;
+  width: 325px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #646369;
+}
+
+.work {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 10px 20px;
+}
+
+.work h2 {
+  margin: 15px 0;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: left;
+  color: white;
+}
+
+.work p {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  color: #dcdce8;
+}
+
+.work button {
+  background-color: #7d73fc;
+  border: #7d73fc;
+  color: #edecff;
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.work button:hover {
+  box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
+  transform: scale(1.05);
+  border: rgba(125, 115, 252, 0.48);
+}
+
+.work button:active {
+  background-color: #5e42d7;
+}
+
+.work button:disabled {
+  background-color: black;
+}
+
+.w-section-tech {
+  display: grid;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+}
+
+.w-section-tech h4 {
+  border-right: 1px solid #555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.w-section-tech .last-tech {
+  border-right: transparent;
+}
+
+.ws-1 {
+  background: #191765 url('./images/Ellipse20.png') no-repeat;
+}
+
+.ws-2 {
+  background: url('./images/Ellipse21.png') center right no-repeat;
+  background-size: 200px;
+}
+
+.ws-3 {
+  background: #191765 url('./images/Ellipse22.png') center left no-repeat;
+}
+
+.ws-4 {
+  background: #191765 url('./images/Ellipse23.png') center right no-repeat;
 }
