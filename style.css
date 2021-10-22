@@ -92,14 +92,17 @@ header nav {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
-.seconed-section h4 {
+.seconed-section ul {
+  list-style-type: none;
+}
+
+.seconed-section li {
   color: #f5f5ff;
   text-align: left;
   font-size: 14px;
-
-  /* font-weight: 500; */
   line-height: 24px;
 }
 
@@ -161,8 +164,6 @@ header nav {
 
 .work {
   height: 90vh;
-
-  /* width: 325px; */
   display: flex;
   flex-direction: column;
   margin-top: 25px;
@@ -194,12 +195,17 @@ header nav {
 }
 
 .work button:hover {
-  background-color: white;
-  border: 2px solid #7d73fc;
-  color: black;
-  width: 90px;
-  height: 50px;
-  margin-top: 15px;
+  box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
+  transform: scale(1.05);
+  border: rgba(125, 115, 252, 0.48);
+}
+
+.work button:active {
+  background-color: #5e42d7;
+}
+
+.work button:disabled {
+  background-color: black;
 }
 
 .w-section-tech {
@@ -216,6 +222,7 @@ header nav {
 .w-section-tech h4 {
   border-right: 1px solid #555;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
 }
 
