@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -185,7 +187,7 @@ header nav {
   color: #dcdce8;
 }
 
-.work button {
+button {
   background-color: #7d73fc;
   border: #7d73fc;
   color: #edecff;
@@ -194,17 +196,17 @@ header nav {
   margin-top: 15px;
 }
 
-.work button:hover {
+button:hover {
   box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
   transform: scale(1.05);
   border: rgba(125, 115, 252, 0.48);
 }
 
-.work button:active {
+button:active {
   background-color: #5e42d7;
 }
 
-.work button:disabled {
+button:disabled {
   background-color: black;
 }
 
@@ -245,4 +247,73 @@ header nav {
 
 .ws-4 {
   background: #191765 url('./images/Ellipse23.png') center right no-repeat;
+}
+
+.contact {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-top: 25px;
+}
+
+.contact h2 {
+  font-weight: bold;
+  color: #9390ff;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  padding: 0 25px;
+  margin: 20px 0;
+}
+
+.contact input {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-footer {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+}
+
+footer a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+input:invalid {
+  border: 2px dashed red;
 }
