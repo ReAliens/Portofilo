@@ -56,7 +56,7 @@ header ul {
   align-items: center;
   background-image: url('./images/circle-1-header.png'), url('./images/circle-2-header.png'), url('./images/de-Ellipse-19.png'), url('./images/de-Ellipse-20.png'), url('./images/de-Ellipse-21.png'), url('./images/de-Ellipse22(1).png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top left, 100% 20%, 0% 35%, 100% 55%, 0% 75%, 100% 85%;
+  background-position: top left, 90% 10%, 0% 35%, 100% 55%, 0% 75%, 100% 85%;
 }
 
 .first-section {
@@ -93,12 +93,16 @@ header ul {
 .seconed-section {
   display: grid;
   width: 40%;
-  height: 50vh;
-  padding: 0 20px;
-  margin-top: 30px;
-  justify-content: space-around;
+  height: 30vh;
+  margin: auto;
+  padding: 30px 20px;
+  justify-content: flex-end;
   grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1px solid #646369;
+}
+
+.seconed-section .lang-position {
+  justify-self: center;
 }
 
 .seconed-section h3 {
@@ -304,12 +308,6 @@ button:disabled {
   box-sizing: border-box;
 }
 
-.full-name {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-}
-
 .contact .submit-button {
   display: flex;
   width: 100%;
@@ -331,7 +329,8 @@ footer {
 
 .social-footer {
   display: flex;
-  width: 20%;
+  width: 10%;
+  margin-right: 20px;
   justify-content: space-around;
 }
 
