@@ -277,7 +277,7 @@ button:disabled {
 }
 
 .contact {
-  height: 95vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   padding: 0 25px;
