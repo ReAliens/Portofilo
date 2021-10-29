@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 1025px)"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 1025px)"
+      href="laptop.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav>
         <a href="/"> Ahmed Reda </a>
-        <img src="./images/Enabled.png" alt="menu" />
+        <div class="nav-mobile">
+          <img src="./images/Enabled.png" alt="menu" />
+        </div>
+        <ul class="nav-desktop">
+          <li><a href="#"> Portoflo</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> contact</a></li>
+          <li>
+            <a href="#"><img src="./images/Icon-Mail.png" alt="email" /></a>
+          </li>
+        </ul>
       </nav>
     </header>
     <div class="container">
@@ -31,7 +51,7 @@
       </section>
       <!-- Langauges and Skills About me Section -->
       <section class="seconed-section">
-        <div>
+        <div class="lang-position">
           <h3>Language</h3>
           <ul class="lang-grid-item">
             <li>Javascript</li>
@@ -40,7 +60,7 @@
             <li>Ruby</li>
           </ul>
         </div>
-        <div>
+        <div class="lang-position">
           <h3>Frameworks</h3>
           <ul class="frame-skills-grid-item">
             <li>Bootstrap</li>
@@ -50,7 +70,7 @@
             <li>CapyBara</li>
           </ul>
         </div>
-        <div>
+        <div class="lang-position">
           <h3>Skills</h3>
           <ul class="frame-skills-grid-item">
             <li>Codekit</li>
@@ -63,140 +83,12 @@
       </section>
       <!--Social links-->
       <section class="third-section">
-        <div class="grid-item social-links">
-          <a
-            href="https://github.com/ReAliens"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="./images/Github.png" alt="Github" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ahmedreda94/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="./images/Linkedin.png" alt="Linkedin" />
-          </a>
-          <a href="#" target="_blank" rel="noreferrer noopener">
-            <img src="./images/Angelist.png" alt="Angelist" />
-          </a>
-          <a
-            href="https://github.com/ReAliens"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="./images/Twitter.png" alt="Twitter" />
-          </a>
-          <a href="#" target="_blank" rel="noreferrer noopener">
-            <img src="./images/Medium.png" alt="Medium" />
-          </a>
-        </div>
-        <div class="grid-item work-nav">
-          <img src="./images/arrow-down.png" alt="down" />
-          <p>Work</p>
-        </div>
-        <div class="grid-item recent">
-          <h2>MY RECENT WORK</h2>
-        </div>
-      </section>
-      <!--previous projects tempelates -->
-      <section class="work ws-1">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <div class="w-section-tech">
-          <h4>Css</h4>
-          <h4>Html</h4>
-          <h4>Bootstrap</h4>
-          <h4 class="last-tech">Ruby</h4>
-        </div>
-        <button type="button">See Project</button>
-      </section>
-      <section class="work ws-2">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <div class="w-section-tech">
-          <h4>Css</h4>
-          <h4>Html</h4>
-          <h4>Bootstrap</h4>
-          <h4 class="last-tech">Ruby</h4>
-        </div>
-        <button type="button">See Project</button>
-      </section>
-      <section class="work ws-3">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <div class="w-section-tech">
-          <h4>Css</h4>
-          <h4>Html</h4>
-          <h4>Bootstrap</h4>
-          <h4 class="last-tech">Ruby</h4>
-        </div>
-        <button type="button">See Project</button>
-      </section>
-      <section class="work ws-4">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <div class="w-section-tech">
-          <h4>Css</h4>
-          <h4>Html</h4>
-          <h4>Bootstrap</h4>
-          <h4 class="last-tech">Ruby</h4>
-        </div>
-        <button type="button">See Project</button>
-      </section>
-      <section class="contact">
-        <h2>CONTACT US</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form method="POST" action="https://formspree.io/f/xayazvpy">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            maxlength="30"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            required
-          />
-          <textarea
-            name="msg"
-            placeholder="Enter you Message here"
-            maxlength="500"
-            required
-          ></textarea>
-          <button type="submit">See Project</button>
-        </form>
-        <footer>
-          <div class="social-footer">
+        <div class="work-row">
+          <div class="grid-item work-nav-2">
+            <p>Work</p>
+            <img src="./images/arrow-down.png" alt="down" />
+          </div>
+          <div class="grid-item social-links">
             <a
               href="https://github.com/ReAliens"
               target="_blank"
@@ -225,9 +117,159 @@
               <img src="./images/Medium.png" alt="Medium" />
             </a>
           </div>
-          <a>ahmedreda152@gmail.com</a>
-        </footer>
+          <div class="grid-item work-nav-1">
+            <img src="./images/arrow-down.png" alt="down" />
+            <p>Work</p>
+          </div>
+        </div>
+        <div class="grid-item recent">
+          <h2>MY RECENT WORK</h2>
+        </div>
       </section>
+      <!--previous projects tempelates -->
+      <section class="work ws-1">
+        <img src="./images/ImgPlaceholder.png" alt="cover" />
+        <div class="work-story">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="w-section-tech">
+            <li>Css</li>
+            <li>Html</li>
+            <li>Bootstrap</li>
+            <li class="last-tech">Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </section>
+      <section class="work ws-2">
+        <img src="./images/ImgPlaceholder.png" alt="cover" />
+        <div class="work-story">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="w-section-tech">
+            <li>Css</li>
+            <li>Html</li>
+            <li>Bootstrap</li>
+            <li class="last-tech">Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </section>
+      <section class="work ws-3">
+        <img src="./images/ImgPlaceholder.png" alt="cover" />
+        <div class="work-story">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="w-section-tech">
+            <li>Css</li>
+            <li>Html</li>
+            <li>Bootstrap</li>
+            <li class="last-tech">Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </section>
+      <section class="work ws-4">
+        <img src="./images/ImgPlaceholder.png" alt="cover" />
+        <div class="work-story">
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="w-section-tech">
+            <li>Css</li>
+            <li>Html</li>
+            <li>Bootstrap</li>
+            <li class="last-tech">Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="us">CONTACT US</h2>
+        <h2 class="chat">Let's chat!</h2>
+
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <div class="form-container">
+          <form method="POST" action="https://formspree.io/f/xayazvpy">
+            <div class="full-name">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+            <textarea
+              name="msg"
+              placeholder="Enter you Message here"
+              maxlength="500"
+              required
+            ></textarea>
+            <div class="submit-button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="social-footer">
+          <a
+            href="https://github.com/ReAliens"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="./images/Github.png" alt="Github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmedreda94/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="./images/Linkedin.png" alt="Linkedin" />
+          </a>
+          <a href="#" target="_blank" rel="noreferrer noopener">
+            <img src="./images/Angelist.png" alt="Angelist" />
+          </a>
+          <a
+            href="https://github.com/ReAliens"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="./images/Twitter.png" alt="Twitter" />
+          </a>
+          <a href="#" target="_blank" rel="noreferrer noopener">
+            <img src="./images/Medium.png" alt="Medium" />
+          </a>
+        </div>
+        <a href="ahmedreda152@gmail.com">ahmedreda152@gmail.com</a>
+      </footer>
     </div>
   </body>
 </html>
