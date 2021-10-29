@@ -7,38 +7,47 @@
 }
 
 body {
-  max-width: 375px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #191765;
 }
 
 header nav {
   display: flex;
-  background-color: #191765;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: #191765;
   padding: 0 25px;
   font-size: 18px;
   line-height: 16px;
   color: white;
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  display: none;
+}
+
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  max-width: 375px;
   background: #191765 url('./images/Ellipse18.png') -20px -50px no-repeat;
-  background-size: 160px;
 }
 
 .first-section {
   height: 95vh;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   padding: 0 25px;
   flex-direction: column;
-  text-align: center;
 }
 
 .title {
@@ -121,11 +130,12 @@ header nav {
 }
 
 .third-section {
-  height: 90vh;
+  height: 50vh;
   display: grid;
-  grid-template-rows: 15% 15% 70%;
+  grid-template-rows: 20% 80%;
   justify-content: center;
   text-align: center;
+  margin-top: 30px;
 }
 
 .grid-item {
@@ -136,12 +146,22 @@ header nav {
   align-items: center;
 }
 
-.work-nav img {
+.work-nav-1 img {
   height: 18px;
   width: 21px;
 }
 
-.work-nav p {
+.third-section .work-nav-2 {
+  display: none;
+}
+
+.third-section .work-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.work-nav-1 p {
   color: #a2a3ae;
   font-weight: 500;
   font-size: 20px;
@@ -168,8 +188,14 @@ header nav {
   height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin-top: 25px;
   padding: 10px 20px;
+}
+
+.work-story {
+  display: flex;
+  flex-direction: column;
 }
 
 .work h2 {
@@ -219,9 +245,10 @@ button:disabled {
   margin-top: 10px;
   grid-template-columns: repeat(4, 1fr);
   color: white;
+  list-style-type: none;
 }
 
-.w-section-tech h4 {
+.w-section-tech li {
   border-right: 1px solid #555;
   font-size: 14px;
   font-weight: 400;
@@ -266,6 +293,10 @@ button:disabled {
   margin-bottom: 10px;
 }
 
+.contact .chat {
+  display: none;
+}
+
 .contact p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -282,6 +313,10 @@ button:disabled {
   margin: 5px 0;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.contact .latsName {
+  display: none;
 }
 
 .contact textarea {
@@ -314,6 +349,64 @@ footer a {
   color: #ebebff;
 }
 
-input:invalid {
-  border: 2px dashed red;
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+  }
+
+  header nav {
+    height: 70px;
+    width: 100%;
+    padding: 0 75px;
+  }
+
+  header .nav-mobile {
+    display: none;
+  }
+
+  header ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .container {
+    background-image: url('./images/circle-1-header.png'), url('./images/circle-2-header.png'), url('./images/de-Ellipse-19.png'), url('./images/de-Ellipse-20.png'), url('./images/de-Ellipse-21.png'), url('./images/de-Ellipse22(1).png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, 100% 20%, 0% 35%, 100% 55%, 0% 75%, 100% 85%;
+  }
+
+  .first-section {
+    height: 60vh;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #646369;
+  }
+
+  .first-section h1 {
+    color: #9390ff;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 100px;
+  }
+
+  .first-section h2 {
+    color: #dfe1e6;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 20px;
+  }
+
+  .first-section p {
+    color: #b3bac5;
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
