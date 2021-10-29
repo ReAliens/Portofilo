@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -349,64 +348,3 @@ footer a {
   color: #ebebff;
 }
 
-@media (min-width: 1025px) {
-  header {
-    display: flex;
-  }
-
-  header nav {
-    height: 70px;
-    width: 100%;
-    padding: 0 75px;
-  }
-
-  header .nav-mobile {
-    display: none;
-  }
-
-  header ul {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    list-style-type: none;
-  }
-
-  .container {
-    background-image: url('./images/circle-1-header.png'), url('./images/circle-2-header.png'), url('./images/de-Ellipse-19.png'), url('./images/de-Ellipse-20.png'), url('./images/de-Ellipse-21.png'), url('./images/de-Ellipse22(1).png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top left, 100% 20%, 0% 35%, 100% 55%, 0% 75%, 100% 85%;
-  }
-
-  .first-section {
-    height: 60vh;
-    width: 40%;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #646369;
-  }
-
-  .first-section h1 {
-    color: #9390ff;
-    font-size: 65px;
-    font-weight: bold;
-    line-height: 100px;
-  }
-
-  .first-section h2 {
-    color: #dfe1e6;
-    font-size: 40px;
-    line-height: 47px;
-    margin-bottom: 20px;
-  }
-
-  .first-section p {
-    color: #b3bac5;
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
