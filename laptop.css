@@ -169,7 +169,10 @@ header ul {
   display: flex;
   justify-content: space-around;
 }
-
+.third-section .social-links a:hover{
+  transform: scale(1.5);
+  cursor: pointer; 
+}
 .third-section .work-nav-1,
 .third-section .work-nav-2 {
   height: 20%;
