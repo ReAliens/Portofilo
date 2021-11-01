@@ -75,6 +75,8 @@ header ul {
   font-size: 65px;
   font-weight: bold;
   line-height: 100px;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 
 .first-section h2 {
@@ -82,12 +84,28 @@ header ul {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 20px;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
 
 .first-section p {
   color: #b3bac5;
   font-size: 20px;
   line-height: 32px;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .seconed-section {
@@ -209,6 +227,12 @@ header ul {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  transition: transform 0.8s;
+}
+
+.w-section-tech li:hover {
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 .w-section-tech .last-tech {
@@ -251,9 +275,29 @@ button:disabled {
   background-color: black;
 }
 
+.ws-1,
+.ws-3 {
+  animation-duration: 5s;
+  animation-name: slideinWork;
+}
+
 .ws-2,
 .ws-4 {
   flex-direction: row-reverse;
+  animation-duration: 5s;
+  animation-name: slideinWork;
+}
+
+@keyframes slideinWork {
+  from {
+    margin-left: 80%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .contact {
@@ -338,4 +382,9 @@ footer a {
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
+}
+
+.third-section .social-links a:hover {
+  transform: scale(1.5);
+  cursor: pointer;
 }
