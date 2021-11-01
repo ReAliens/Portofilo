@@ -10,6 +10,9 @@ This is the a portofilo project
 - HTML, CSS
 - stylelint
 
+
+## Live Demo
+https://realiens.github.io/Portofilo/
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -25,6 +28,10 @@ Open with live server on vscode
 ### Install
 no installations
 
+
+## Deployment
+ 
+Deployed with github pages as a host
 
 
 ## Authors
