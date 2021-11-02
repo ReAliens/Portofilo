@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +100,6 @@ header ul {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
@@ -170,8 +168,7 @@ header ul {
   justify-content: space-around;
 }
 
-.third-section .work-nav-1,
-.third-section .work-nav-2 {
+.third-section .work-nav-1, .third-section .work-nav-2 {
   height: 20%;
   display: flex;
   align-items: center;
@@ -254,35 +251,33 @@ header ul {
 }
 
 button {
-  background-color: #7d73fc;
-  border: #7d73fc;
+  background-color: #5C37B5;
+  border: #5C37B5;
   color: #edecff;
   width: 150px;
   height: 50px;
 }
 
 button:hover {
-  box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
+  box-shadow: -3px 5px 10px rgb(92, 55, 181);
   transform: scale(1.05);
-  border: rgba(125, 115, 252, 0.48);
+  border: rgb(92, 55, 181)
 }
 
 button:active {
-  background-color: #5e42d7;
+  background-color: #5C37B5;
 }
 
 button:disabled {
   background-color: black;
 }
 
-.ws-1,
-.ws-3 {
+.ws-1, .ws-3 {
   animation-duration: 5s;
   animation-name: slideinWork;
 }
 
-.ws-2,
-.ws-4 {
+.ws-2, .ws-4 {
   flex-direction: row-reverse;
   animation-duration: 5s;
   animation-name: slideinWork;
@@ -293,7 +288,6 @@ button:disabled {
     margin-left: 80%;
     width: 200%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
@@ -311,6 +305,10 @@ button:disabled {
 
 .form-container {
   width: 90%;
+}
+
+.form-container label {
+  display: none;
 }
 
 .contact .us {

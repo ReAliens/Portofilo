@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -161,7 +160,7 @@ header ul {
   margin-bottom: 30px;
 }
 
-.work-nav-1 p {
+.work-nav-1 h4 {
   color: #a2a3ae;
   font-weight: 500;
   font-size: 20px;
@@ -214,8 +213,8 @@ header ul {
 }
 
 button {
-  background-color: #7d73fc;
-  border: #7d73fc;
+  background-color: #5C37B5;
+  border: #5C37B5;
   color: #edecff;
   width: 90px;
   height: 50px;
@@ -229,7 +228,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #5e42d7;
+  background-color: #5C37B5;
 }
 
 button:disabled {
