@@ -74,7 +74,7 @@ header ul {
   font-size: 65px;
   font-weight: bold;
   line-height: 100px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -83,7 +83,7 @@ header ul {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 20px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -91,7 +91,7 @@ header ul {
   color: #b3bac5;
   font-size: 20px;
   line-height: 32px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -273,13 +273,13 @@ button:disabled {
 }
 
 .ws-1, .ws-3 {
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slideinWork;
 }
 
 .ws-2, .ws-4 {
   flex-direction: row-reverse;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slideinWork;
 }
 
