@@ -29,7 +29,7 @@
       media="only screen and (min-width: 1025px)"
       href="laptop.css"
     />
-    <title>Portoflio</title>
+    <title>Ahmed Portoflio home page</title>
   </head>
   <body>
     <header>
@@ -99,7 +99,7 @@
       <section class="third-section">
         <div class="work-row">
           <div class="grid-item work-nav-2">
-            <p>Work</p>
+            <h4>Work</h4>
             <img src="./images/arrow-down.png" alt="down" />
           </div>
           <div class="grid-item social-links">
@@ -133,7 +133,7 @@
           </div>
           <div class="grid-item work-nav-1">
             <img src="./images/arrow-down.png" alt="down" />
-            <p>Work</p>
+            <h4>Work</h4>
           </div>
         </div>
         <div class="grid-item recent">
@@ -225,7 +225,9 @@
         <div class="form-container">
           <form method="POST" action="https://formspree.io/f/xayazvpy">
             <div class="full-name">
+              <label for="name"> Name </label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 placeholder="Name"
@@ -233,15 +235,17 @@
                 required
               />
             </div>
+            <label for="email"> Email </label>
             <input
               type="email"
-              name="email"
+              id="email"
               placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
             />
+            <label for="msg"> Message </label>
             <textarea
-              name="msg"
+              id="msg"
               placeholder="Enter you Message here"
               maxlength="500"
               required
@@ -255,7 +259,7 @@
       <footer>
         <div class="social-footer">
           <a
-            href="https://github.com/ReAliens"
+            href="#"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -271,11 +275,7 @@
           <a href="#" target="_blank" rel="noreferrer noopener">
             <img src="./images/Angelist.png" alt="Angelist" />
           </a>
-          <a
-            href="https://github.com/ReAliens"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <a href="#" target="_blank" rel="noreferrer noopener">
             <img src="./images/Twitter.png" alt="Twitter" />
           </a>
           <a href="#" target="_blank" rel="noreferrer noopener">

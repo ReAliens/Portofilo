@@ -75,7 +75,7 @@ header ul {
   font-size: 65px;
   font-weight: bold;
   line-height: 100px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -84,7 +84,7 @@ header ul {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 20px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -92,7 +92,7 @@ header ul {
   color: #b3bac5;
   font-size: 20px;
   line-height: 32px;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slidein;
 }
 
@@ -254,21 +254,21 @@ header ul {
 }
 
 button {
-  background-color: #7d73fc;
-  border: #7d73fc;
+  background-color: #5c37b5;
+  border: #5c37b5;
   color: #edecff;
   width: 150px;
   height: 50px;
 }
 
 button:hover {
-  box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
+  box-shadow: -3px 5px 10px rgb(92, 55, 181);
   transform: scale(1.05);
-  border: rgba(125, 115, 252, 0.48);
+  border: rgb(92, 55, 181);
 }
 
 button:active {
-  background-color: #5e42d7;
+  background-color: #5c37b5;
 }
 
 button:disabled {
@@ -277,14 +277,14 @@ button:disabled {
 
 .ws-1,
 .ws-3 {
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slideinWork;
 }
 
 .ws-2,
 .ws-4 {
   flex-direction: row-reverse;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: slideinWork;
 }
 
@@ -311,6 +311,10 @@ button:disabled {
 
 .form-container {
   width: 90%;
+}
+
+.form-container label {
+  display: none;
 }
 
 .contact .us {
