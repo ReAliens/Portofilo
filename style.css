@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +47,10 @@ header nav {
   text-align: end;
 }
 
+header ul {
+  display: none;
+}
+
 .menuContainer ul {
   list-style: none;
 }
@@ -55,14 +60,7 @@ header nav {
   text-decoration: none;
   font-size: 24px;
   line-height: 32px;
-  color: #EDECFF;
-}
-
-.menuContainer li a {
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 32px;
-  color: #EDECFF;
+  color: #edecff;
 }
 
 header a {
@@ -70,8 +68,17 @@ header a {
   text-decoration: none;
 }
 
-header ul {
-  display: none;
+footer a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.menuContainer li a {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #edecff;
 }
 
 .container {
@@ -383,10 +390,4 @@ footer {
   display: flex;
   width: 65%;
   justify-content: space-around;
-}
-
-footer a {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
 }
