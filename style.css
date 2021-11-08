@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +20,49 @@ header nav {
   font-size: 18px;
   line-height: 16px;
   color: white;
+}
+
+.menuContainer {
+  background-color: #191765;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 98;
+  transition: 0.4s;
+}
+
+.menuContainer.isActive {
+  left: 0;
+}
+
+.menuContainer .closeButton {
+  width: 80%;
+  text-align: end;
+}
+
+.menuContainer ul {
+  list-style: none;
+}
+
+.menuContainer li {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #EDECFF;
+}
+
+.menuContainer li a {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #EDECFF;
 }
 
 header a {

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +34,7 @@ header a {
   text-decoration: none;
 }
 
-header .nav-mobile {
+header .navMobile {
   display: none;
 }
 
@@ -101,7 +100,6 @@ header ul {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
@@ -170,8 +168,7 @@ header ul {
   justify-content: space-around;
 }
 
-.third-section .work-nav-1,
-.third-section .work-nav-2 {
+.third-section .work-nav-1, .third-section .work-nav-2 {
   height: 20%;
   display: flex;
   align-items: center;
@@ -275,14 +272,12 @@ button:disabled {
   background-color: black;
 }
 
-.ws-1,
-.ws-3 {
+.ws-1, .ws-3 {
   animation-duration: 4s;
   animation-name: slideinWork;
 }
 
-.ws-2,
-.ws-4 {
+.ws-2, .ws-4 {
   flex-direction: row-reverse;
   animation-duration: 4s;
   animation-name: slideinWork;
@@ -293,7 +288,6 @@ button:disabled {
     margin-left: 80%;
     width: 200%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
