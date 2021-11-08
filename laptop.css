@@ -70,6 +70,10 @@ header ul {
   border-bottom: 1px solid #646369;
 }
 
+.menuContainer {
+  display: none;
+}
+
 .first-section h1 {
   color: #9390ff;
   font-size: 65px;
