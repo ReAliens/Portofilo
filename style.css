@@ -23,13 +23,62 @@ header nav {
   color: white;
 }
 
+.menuContainer {
+  background-color: #191765;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 98;
+  transition: 0.4s;
+}
+
+.menuContainer.isActive {
+  left: 0;
+}
+
+.menuContainer .closeButton {
+  width: 80%;
+  text-align: end;
+}
+
+header ul {
+  display: none;
+}
+
+.menuContainer ul {
+  list-style: none;
+}
+
+.menuContainer li {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #edecff;
+}
+
 header a {
   color: white;
   text-decoration: none;
 }
 
-header ul {
-  display: none;
+footer a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.menuContainer li a {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  color: #edecff;
 }
 
 .container {
@@ -307,6 +356,10 @@ button:disabled {
   margin: 20px 0;
 }
 
+.form-container label {
+  display: none;
+}
+
 .contact input {
   width: 100%;
   padding: 5px 10px;
@@ -341,10 +394,4 @@ footer {
   display: flex;
   width: 65%;
   justify-content: space-around;
-}
-
-footer a {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
 }

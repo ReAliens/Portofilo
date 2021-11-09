@@ -16,6 +16,8 @@ header {
   height: 70px;
   display: flex;
   background-color: #191765;
+  position: sticky;
+  top: 0;
 }
 
 header nav {
@@ -35,7 +37,7 @@ header a {
   text-decoration: none;
 }
 
-header .nav-mobile {
+header .navMobile {
   display: none;
 }
 
@@ -68,6 +70,10 @@ header ul {
   flex-direction: column;
   margin-bottom: 30px;
   border-bottom: 1px solid #646369;
+}
+
+.menuContainer {
+  display: none;
 }
 
 .first-section h1 {
