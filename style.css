@@ -356,6 +356,10 @@ button:disabled {
   margin: 20px 0;
 }
 
+.form-container label {
+  display: none;
+}
+
 .contact input {
   width: 100%;
   padding: 5px 10px;
