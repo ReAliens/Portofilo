@@ -30,7 +30,7 @@
     />
     <title>Ahmed Portoflio home page</title>
   </head>
-  <body>
+  <body onload="addElements()">
     <header>
       <nav>
         <a href="/"> Ahmed Reda </a>
@@ -38,9 +38,9 @@
           <img src="./images/Enabled.png" alt="menu" class="navMobileIcon" />
         </div>
         <ul class="nav-desktop">
-          <li><a href="#"> Portoflio</a></li>
-          <li><a href="#"> About</a></li>
-          <li><a href="#"> contact</a></li>
+          <li><a href="#first-section"> Portoflio</a></li>
+          <li><a href="#third-section"> About</a></li>
+          <li><a href="#contact"> Contact</a></li>
           <li>
             <a href="#"><img src="./images/Icon-Mail.png" alt="email" /></a>
           </li>
@@ -57,7 +57,7 @@
         <li class="menuLink3"><a href="#contact"> contact</a></li>
       </ul>
     </nav>
-    <div class="container">
+    <div id="container" class="container">
       <!-- brief Introduction -->
       <section class="first-section" id="first-section">
         <div class="title">
@@ -150,78 +150,49 @@
         </div>
       </section>
       <!--previous projects tempelates -->
-      <section class="work ws-1" id="third-section">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <div class="work-story">
-          <h2>Multi-Post Stories</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="w-section-tech">
-            <li>Css</li>
-            <li>Html</li>
-            <li>Bootstrap</li>
-            <li class="last-tech">Ruby</li>
-          </ul>
-          <button type="button">See Project</button>
+      <div id="lastWork" class="last-work">
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <div class="closeButton" id="modalCloseButton">
+              <img src="./images/Icon-Cancel.png" alt="close" />
+            </div>
+            <h2 id="modalTitle">Multi-post story</h2>
+            <img src="images/number1.jpg" alt="cover" id="modalImage" />
+            <p id="modalDesc">
+              iLorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s with the releaLorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scramble.
+            </p>
+            <ul id="modalList" class="w-section-tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Ruby</li>
+              <li class="last-tech">Bootstrap</li>
+            </ul>
+            <div class="buttonContainer">
+              <a href="#" id="goLive" target="_blank">
+                <div class="buttonsLink">
+                  See Live
+                  <img src="./images/Icon-Export.png" alt="icon" />
+                </div>
+              </a>
+              <a href="#" id="source" target="_blank">
+                <div class="buttonsLink">
+                  See Source
+                  <img src="./images/Github.png" alt="icon" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="work ws-2">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <div class="work-story">
-          <h2>Multi-Post Stories</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="w-section-tech">
-            <li>Css</li>
-            <li>Html</li>
-            <li>Bootstrap</li>
-            <li class="last-tech">Ruby</li>
-          </ul>
-          <button type="button">See Project</button>
-        </div>
-      </section>
-      <section class="work ws-3">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <div class="work-story">
-          <h2>Multi-Post Stories</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="w-section-tech">
-            <li>Css</li>
-            <li>Html</li>
-            <li>Bootstrap</li>
-            <li class="last-tech">Ruby</li>
-          </ul>
-          <button type="button">See Project</button>
-        </div>
-      </section>
-      <section class="work ws-4">
-        <img src="./images/ImgPlaceholder.png" alt="cover" />
-        <div class="work-story">
-          <h2>Multi-Post Stories</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="w-section-tech">
-            <li>Css</li>
-            <li>Html</li>
-            <li>Bootstrap</li>
-            <li class="last-tech">Ruby</li>
-          </ul>
-          <button type="button">See Project</button>
-        </div>
-      </section>
+      </div>
       <section class="contact" id="contact">
         <h2 class="us">CONTACT US</h2>
         <h2 class="chat">Let's chat!</h2>

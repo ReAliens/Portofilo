@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +60,99 @@ header ul {
   font-size: 24px;
   line-height: 32px;
   color: #edecff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191765;
+}
+
+.modal-content {
+  background-color: rgba(37, 47, 137, 0.08);
+  z-index: 98;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+  margin: 3% auto;
+  padding: 30px;
+  width: 80%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.modal-content .buttonContainer {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.modal-content .buttonContainer img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.modal-content .buttonsLink {
+  background-color: #7D73FC;
+  width: 100px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.modal-content .buttonsLink:hover {
+  box-shadow: -3px 5px 10px rgb(92, 55, 181);
+  transform: scale(1.05);
+  border: rgb(92, 55, 181);
+  cursor: pointer;
+}
+
+.modal-content a {
+  text-decoration: none;
+}
+
+.modal-content .closeButton {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: white;
+  align-self: flex-start;
+}
+
+.modal-content p {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
 }
 
 header a {
@@ -238,8 +330,14 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   margin-top: 25px;
   padding: 10px 20px;
+}
+
+.work img {
+  width: 100%;
+  height: 50%;
 }
 
 .work-story {
@@ -275,6 +373,7 @@ button:hover {
   box-shadow: -3px 5px 10px rgba(125, 115, 252, 0.48);
   transform: scale(1.05);
   border: rgba(125, 115, 252, 0.48);
+  cursor: pointer;
 }
 
 button:active {
@@ -330,7 +429,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   padding: 0 25px;
-  margin-top: 25px;
+  margin-top: 150px;
 }
 
 .contact h2 {
