@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +107,7 @@ header ul {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
@@ -174,7 +176,8 @@ header ul {
   justify-content: space-around;
 }
 
-.third-section .work-nav-1, .third-section .work-nav-2 {
+.third-section .work-nav-1,
+.third-section .work-nav-2 {
   height: 20%;
   display: flex;
   align-items: center;
@@ -252,6 +255,7 @@ header ul {
   background-image: url('./images/circle-1-header.png'), url('./images//circle-2-header.png');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, center right;
+
   /* background-color: #191765; */
   background-color: #191765;
 }
@@ -260,8 +264,7 @@ header ul {
   background-color: rgba(37, 47, 137, 0.08);
   z-index: 98;
   align-items: center;
-  justify-content: center;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #fff;
   margin: 3% auto;
   padding: 30px;
   width: 80%;
@@ -287,7 +290,7 @@ header ul {
 }
 
 .modal-content .buttonsLink {
-  background-color: #7D73FC;
+  background-color: #7d73fc;
   width: 150px;
   height: 30px;
   display: flex;
@@ -302,6 +305,12 @@ header ul {
   transform: scale(1.05);
   border: rgb(92, 55, 181);
   cursor: pointer;
+}
+
+footer a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
 }
 
 .modal-content a {
@@ -346,7 +355,7 @@ header ul {
 }
 
 .modal-content p {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -383,12 +392,14 @@ button:disabled {
   background-color: black;
 }
 
-.ws-1, .ws-3 {
+.ws-1,
+.ws-3 {
   animation-duration: 4s;
   animation-name: slideinWork;
 }
 
-.ws-2, .ws-4 {
+.ws-2,
+.ws-4 {
   flex-direction: row-reverse;
   animation-duration: 4s;
   animation-name: slideinWork;
@@ -399,6 +410,7 @@ button:disabled {
     margin-left: 80%;
     width: 200%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
@@ -485,12 +497,6 @@ footer {
   width: 10%;
   margin-right: 20px;
   justify-content: space-around;
-}
-
-footer a {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
 }
 
 .third-section .social-links a:hover {
