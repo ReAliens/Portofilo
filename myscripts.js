@@ -81,23 +81,21 @@ projectsDetails.map((project) => {
     </p>
     <ul class='w-section-tech'>
     ${project.technologies
-      .map((item, index) => {
-        return `<li class=${index === 3 ? 'last-tech' : ''}>${item}</li>`;
-      })
-      .join('')}
+    .map((item, index) => `<li class=${index === 3 ? 'last-tech' : ''}>${item}</li>`)
+    .join('')}
     </ul>
     <button data-modal=${
-      project.id
-    } type='button' class='viewButton'>See Project</button>
+  project.id
+} type='button' class='viewButton'>See Project</button>
 </section>`;
-  workPart.insertAdjacentHTML('beforeend', projectSummary);
+  return workPart.insertAdjacentHTML('beforeend', projectSummary);
 });
 
 const modal = document.getElementById('modal');
 const onModalOpen = (id) => {
   document.body.style.overflow = 'hidden';
   const selectedModal = projectsDetails.find(
-    (project) => project.id === Number(id)
+    (project) => project.id === Number(id),
   );
   const modalTitle = document.getElementById('modalTitle');
   const modalImage = document.getElementById('modalImage');
@@ -112,7 +110,7 @@ const onModalOpen = (id) => {
   modalList.innerHTML = '';
   selectedModal.technologies.map((tech, index) => {
     const techs = `<li class=${index === 3 ? 'last-tech' : ''}>${tech}</li>`;
-    modalList.insertAdjacentHTML('beforeend', techs);
+    return modalList.insertAdjacentHTML('beforeend', techs);
   });
   modalLiveLink.setAttribute('href', `${selectedModal.link}`);
   modalSoucreLink.setAttribute('href', `${selectedModal.link}`);
