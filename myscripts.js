@@ -82,7 +82,9 @@ const addElements = () => {
     </p>
     <ul class='w-section-tech'>
     ${project.technologies
-    .map((item, index) => `<li class=${index === 3 ? 'last-tech' : ''}>${item}</li>`)
+    .map(
+      (item, index) => `<li class=${index === 3 ? 'last-tech' : ''}>${item}</li>`,
+    )
     .join('')}
       </ul>
       <button data-modal=${
@@ -135,3 +137,24 @@ modalCloseButton.addEventListener('click', () => {
   modal.style.display = 'none';
   document.body.style.overflow = 'visible';
 });
+
+const validateEmailInput = () => {
+  const form = document.getElementById('contactForm');
+  const email = document.getElementById('email');
+  const errMsg = document.getElementById('errorMsg');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (email.value !== email.value.toLowerCase()) {
+      errMsg.textContent = 'please insert email with lowerCase characters only';
+      errMsg.style.color = 'red';
+    } else {
+      errMsg.textContent = '';
+      form.submit();
+    }
+  });
+};
+
+window.onload = () => {
+  validateEmailInput();
+};

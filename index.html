@@ -203,7 +203,11 @@
           with it
         </p>
         <div class="form-container">
-          <form method="POST" action="https://formspree.io/f/xayazvpy">
+          <form
+            method="POST"
+            action="https://formspree.io/f/xleaqeyg"
+            id="contactForm"
+          >
             <div class="full-name">
               <label for="name"> Name </label>
               <input
@@ -220,7 +224,6 @@
               type="email"
               id="email"
               placeholder="Email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
             />
             <label for="msg"> Message </label>
@@ -230,8 +233,9 @@
               maxlength="500"
               required
             ></textarea>
+            <span id="errorMsg"></span>
             <div class="submit-button">
-              <button type="submit">Send</button>
+              <button type="submit" class="submitButton">Send</button>
             </div>
           </form>
         </div>
