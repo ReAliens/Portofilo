@@ -193,6 +193,14 @@ header ul {
   font-weight: bold;
 }
 
+.last-work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .work {
   width: 80%;
   height: 70vh;
@@ -205,6 +213,12 @@ header ul {
 .work img {
   width: 60%;
   height: 70%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
 }
 
 .work .work-story {
@@ -226,6 +240,85 @@ header ul {
   column-gap: 20px;
   color: white;
   list-style-type: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/circle-1-header.png'), url('./images//circle-2-header.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, center right;
+  background-color: #191765;
+  opacity: 100%;
+}
+
+.modal-content {
+  background-color: rgba(37, 47, 137, 0.8);
+  z-index: 98;
+  align-items: center;
+  border: 2px solid #fff;
+  margin: 3% auto;
+  padding: 30px;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-content .buttonContainer {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-content .buttonContainer img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.modal-content .buttonsLink {
+  background-color: #7d73fc;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.modal-content .buttonsLink:hover {
+  box-shadow: -3px 5px 10px rgb(92, 55, 181);
+  transform: scale(1.05);
+  border: rgb(92, 55, 181);
+  cursor: pointer;
+}
+
+footer a {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.modal-content a {
+  text-decoration: none;
+}
+
+.modal-content .closeButton {
+  align-self: flex-end;
+  cursor: pointer;
 }
 
 .w-section-tech li {
@@ -252,6 +345,22 @@ header ul {
   color: white;
 }
 
+.modal-content h2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+  color: white;
+  align-self: flex-start;
+}
+
+.modal-content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 100px;
+}
+
 .work p {
   font-size: 20px;
   line-height: 28px;
@@ -271,6 +380,7 @@ button:hover {
   box-shadow: -3px 5px 10px rgb(92, 55, 181);
   transform: scale(1.05);
   border: rgb(92, 55, 181);
+  cursor: pointer;
 }
 
 button:active {
@@ -386,12 +496,6 @@ footer {
   width: 10%;
   margin-right: 20px;
   justify-content: space-around;
-}
-
-footer a {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
 }
 
 .third-section .social-links a:hover {
