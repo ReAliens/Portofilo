@@ -70,26 +70,30 @@ const projectsDetails = [
   },
 ];
 
-projectsDetails.map((project) => {
-  const projectSummary = `
-  <section class='work ws-${project.id}' id='third-section'>
-  <img src='${project.image}' alt='cover' />
-  <div class='work-story'>
+const addElements = () => {
+  projectsDetails.map((project) => {
+    const projectSummary = `
+    <section class='work ws-${project.id}' id='third-section'>
+    <img src='${project.image}' alt='cover' />
+    <div class='work-story'>
     <h2>${project.name}</h2>
     <p>
-   ${project.description}
+    ${project.description}
     </p>
     <ul class='w-section-tech'>
     ${project.technologies
     .map((item, index) => `<li class=${index === 3 ? 'last-tech' : ''}>${item}</li>`)
     .join('')}
-    </ul>
-    <button data-modal=${
+      </ul>
+      <button data-modal=${
   project.id
 } type='button' class='viewButton'>See Project</button>
-</section>`;
-  return workPart.insertAdjacentHTML('beforeend', projectSummary);
-});
+      </section>`;
+    return workPart.insertAdjacentHTML('beforeend', projectSummary);
+  });
+};
+
+window.onload = addElements();
 
 const modal = document.getElementById('modal');
 const onModalOpen = (id) => {

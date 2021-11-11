@@ -255,13 +255,12 @@ header ul {
   background-image: url('./images/circle-1-header.png'), url('./images//circle-2-header.png');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, center right;
-
-  /* background-color: #191765; */
   background-color: #191765;
+  opacity: 100%;
 }
 
 .modal-content {
-  background-color: rgba(37, 47, 137, 0.08);
+  background-color: rgba(37, 47, 137, 0.8);
   z-index: 98;
   align-items: center;
   border: 2px solid #fff;

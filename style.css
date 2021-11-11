@@ -85,6 +85,7 @@ footer a {
   width: 100%;
   height: 100%;
   background-color: #191765;
+  opacity: 100%;
 }
 
 .modal-content img {
@@ -99,7 +100,7 @@ footer a {
 }
 
 .modal-content {
-  background-color: rgba(37, 47, 137, 0.08);
+  background-color: rgba(37, 47, 137, 0.8);
   z-index: 98;
   align-items: center;
   justify-content: center;
