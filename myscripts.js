@@ -93,7 +93,9 @@ const addElements = () => {
   });
 };
 
-window.onload = addElements();
+window.onload = () => {
+  addElements();
+};
 
 const modal = document.getElementById('modal');
 const onModalOpen = (id) => {
