@@ -143,7 +143,7 @@ const validateEmailInput = () => {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (email.value !== email.value.toLowerCase()) {
+    if (email.value === email.value.toLowerCase()) {
       errMsg.textContent = 'please insert email with lowerCase characters only';
       errMsg.style.color = 'red';
     } else {
